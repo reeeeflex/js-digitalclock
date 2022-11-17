@@ -8,8 +8,11 @@ const showTime = function () {
   if (hour === 0) {
     hour = 12;
   }
-  if (hour >= 12) {
+  if (hour > 12) {
     hour -= 12;
+    timeOfDay = 'PM';
+  }
+  if (hour >= 12) {
     timeOfDay = 'PM';
   }
   // if hour is less than 10 hour is set to 0 + the hour
