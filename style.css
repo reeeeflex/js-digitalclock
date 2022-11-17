@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #073b4c;
+  font-family: 'Sono', sans-serif;
+}
+
+.clock {
+  color: #ffd166;
+  font-size: 5rem;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    font-size: 3rem;
+  }
+}
